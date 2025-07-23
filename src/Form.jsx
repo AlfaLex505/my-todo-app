@@ -1,6 +1,6 @@
 const Form = () => {
 
-    const handleSubmit = () => {
+    const handleSubmit = (event) => {
         event.preventDefault();
         event.target.reset();
     };
