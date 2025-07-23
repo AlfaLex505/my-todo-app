@@ -13,7 +13,7 @@ const TODOList = ({ todos }) => {
 );
 }
 
-const Item = () => {
+const Item = ({item}) => {
     return (
         <li id={item?.id} className="todo_item">
             <button className="todo_items_left">
