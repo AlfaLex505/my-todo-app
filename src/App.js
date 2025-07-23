@@ -1,16 +1,16 @@
 import React from "react";
 import Form from "./Form";
 import Header from "./Header";
-import TODOHero from "./TODOHero";
 import TODOList from "./TODOList";
 import "./styles.css";
+import TaskSummary from "./TaskSummary";
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <TODOHero todos_completed ={0} total_todos={0} />
+      <TaskSummary completed={0} total={0}/>
       <Form />
       <TODOList />
     </div>
