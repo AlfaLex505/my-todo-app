@@ -3,6 +3,7 @@ import Form from "./Form";
 import Header from "./Header";
 import TODOHero from "./TODOHero";
 import TODOList from "./TODOList";
+import "./styles.css";
 
 
 function App() {
