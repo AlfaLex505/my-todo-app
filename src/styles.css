@@ -1,27 +1,34 @@
+/* Global reset and base styles */
 *,
 *::after,
-*::before{
+*::before {
     padding: 0;
     margin: 0;
     font-family: inherit;
     box-sizing: border-box;
 }
+
 html,
 body {
     font-family: sans-serif;
     background-color: #0d0d0d;
     color: #fff;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
 }
-button{
+
+button {
     cursor: pointer;
 }
+
+/* Accessible hidden text */
 .visually-hidden {
     position: absolute !important;
-    clip: rect(1pc, 1px, 1px, 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
     padding: 0 !important;
     border: 0 !important;
     height: 1px !important;
@@ -29,36 +36,64 @@ button{
     overflow: hidden;
     white-space: nowrap;
 }
+
+/* Typography */
 .text_large {
     font-size: 32px;
 }
+
 .text_small {
     font-size: 24px;
 }
+
+/* Wrapper layout */
 .wrapper {
     display: flex;
     flex-direction: column;
     width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 30px;
 }
+
 @media (max-width: 510px) {
     .wrapper {
         width: 100%;
+        padding: 0 16px;
     }
     header {
         justify-content: center;
     }
 }
+
+/* Header */
 header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 12px;
-    padding: 42px;
+    padding: 42px 0;
 }
-.todohero_section div:last-child{
+
+/* Hero Section */
+.todohero_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 455px;
+    border: 1px solid #c2b38a;
+    border-radius: 12px;
+    padding: 20px 30px;
+    background-color: #0d0d0d;
+}
+
+.todohero_section div:last-child {
     background-color: #88ab33;
-    width: 150 px;
-    height: 150 px;
+    width: 150px;
+    height: 150px;
     border-radius: 75px;
     font-size: 48px;
     display: flex;
@@ -66,35 +101,46 @@ header {
     justify-content: center;
     text-align: center;
 }
+
+/* Form */
 .form {
     align-self: center;
-    width: 150px;
+    width: 100%;
     max-width: 455px;
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-top: 38px;
+    margin-top: 20px;
 }
+
 .form label {
-    width: 90%;
+    width: 100%;
 }
+
 .form input {
     background-color: #1f2937;
     color: #fff;
     width: 100%;
-    height: 50 px;
+    height: 50px;
     outline: none;
     border: none;
     border-radius: 11px;
     padding: 12px;
+    font-size: 16px;
 }
+
 .form button {
-    width: 10%;
+    width: 50px;
     height: 50px;
     border-radius: 11px;
     background-color: #88ab33;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+/* Todo List */
 .todo_list {
     align-self: center;
     width: 97%;
@@ -102,10 +148,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 27px;
-    margin-bottom: 27px;
+    margin: 27px 0;
     gap: 27px;
 }
+
+/* Todo Items */
 .todo_item,
 .edit-form input {
     display: flex;
@@ -120,17 +167,22 @@ header {
     color: #fff;
     padding: 12px;
 }
+
+/* Edit form */
 .edit-form input {
     outline: transparent;
     width: calc(100% - 14px);
     height: calc(100% - 12px);
     border: transparent;
 }
+
+/* Item sides */
 .todo_items_left,
 .todo_items_right {
     display: flex;
     align-items: center;
 }
+
 .todo_items_left {
     background-color: transparent;
     border: none;
@@ -138,14 +190,17 @@ header {
     gap: 12px;
     font-size: 16px;
 }
+
 .todo_items_right {
     gap: 4px;
 }
+
 .todo_items_right button {
     background-color: transparent;
     color: #fff;
     border: none;
 }
+
 .todo_items_right button svg {
     fill: #c2b39a;
 }
