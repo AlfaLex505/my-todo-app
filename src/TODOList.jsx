@@ -1,6 +1,16 @@
 // This is the To-do list component
-const TODOList = () => {
-    return <ol className="todo_list"> {/* The list of task will go here! */} </ol>
+const TODOList = ({ todos }) => {
+
+    return (
+    <ol className="todo_list">
+        {todos && todos.length > 0 ?(
+            todos?.map((item, index) => <Item key={index} item={item}/>)
+        ):(
+            <p>Seems lonely in here, what are you up to?</p>
+        )}
+    </ol>
+
+);
 }
 
 const Item = () => {
