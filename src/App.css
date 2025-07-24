@@ -1,7 +1,21 @@
+body {
+  font-family: sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
 .todo-item {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  width: 300px;
+  padding: 5px;
   margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 .todo-item p {
   color: #888;
@@ -12,5 +26,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 10xp;
+}
+.todo-text {
+  flex: 1;
 }

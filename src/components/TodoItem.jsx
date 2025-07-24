@@ -13,7 +13,7 @@ const TodoItem = ({ task, deleteTask, toggleCompleted }) => {
                 checked={task.completed}
                 onChange={handleChange}
             />
-            <p>{task.text}</p>
+            <p className="todo-text">{task.text}</p>
             <button onClick={() => deleteTask(task.id)}>
                 X
             </button>
