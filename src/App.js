@@ -1,18 +1,13 @@
-import React from "react";
-import Form from "./Form";
-import Header from "./Header";
-import TODOList from "./TODOList";
-import "./styles.css";
-import TaskSummary from "./TaskSummary";
-
+import logo from './logo.svg';
+import './App.css';
+import TodoHeader from "./components/TodoHeader";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <TaskSummary completed={0} total={0}/>
-      <Form />
-      <TODOList />
+      <TodoHeader />
+      <TodoList />
     </div>
   );
 }
