@@ -6,10 +6,10 @@ const TodoHeader = () => {
     const [phrase , setPhrase] = useState(messages[0])
 
     const handleChange = (index) => {
-        if (index <= messages.length-1){
-            setPhrase(messages[index+1])
-        } else {
+        if (index === messages.length-1){
             setPhrase(messages[0])
+        } else {
+            setPhrase(messages[index+1])
         }
         
     };
