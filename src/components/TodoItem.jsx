@@ -14,7 +14,7 @@ const TodoItem = ({ task, deleteTask, toggleCompleted }) => {
                 onChange={handleChange}
             />
             <p className="todo-text">{task.text}</p>
-            <button onClick={() => deleteTask(task.id)}>
+            <button className="delete-button" onClick={() => deleteTask(task.id)}>
                 X
             </button>
         </div>
