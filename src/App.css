@@ -38,8 +38,9 @@ body {
 .summary {
   display: flex;
   align-items: center;
-  width: 300px;
+  width: 400px;
   padding: 15px;
+  gap: 15px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .add-buttons {
@@ -52,7 +53,7 @@ body {
   padding: 10px 20px;
   cursor: pointer;
   transition: all 0.3s ease;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 .add-buttons:hover {
   background-color: #ff6666;
@@ -71,4 +72,10 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 .text-input:focus {
   border-color: #ff4444;
   box-shadow: 0 0 6px rgba(255, 68, 68, 0.5);
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
 }
