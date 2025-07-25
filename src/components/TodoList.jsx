@@ -65,7 +65,7 @@ const TodoList = () => {
                 value={text}
                 onChange={e => setText(e.target.value)}
             />
-            <button onClick={() => addTask(text)}>Add</button>
+            <button className="add-buttons" onClick={() => addTask(text)}>Add</button>
         </div>
     );
 

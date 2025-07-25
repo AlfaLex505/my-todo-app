@@ -17,7 +17,7 @@ const TodoHeader = () => {
     return (
         <div className="summary">
             <p>{phrase}</p>
-            <button onClick={() => handleChange(messages.indexOf(phrase))}>
+            <button className="add-buttons" onClick={() => handleChange(messages.indexOf(phrase))}>
                 Click me!
             </button>
         </div>
