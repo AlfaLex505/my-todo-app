@@ -61,7 +61,7 @@ const TodoList = () => {
                     toggleCompleted={toggleCompleted}
                 />
             ))}
-            <input
+            <input className="text-input"
                 value={text}
                 onChange={e => setText(e.target.value)}
             />

@@ -59,3 +59,16 @@ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
+.text-input {
+  width: 250px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fefefe;
+}
+.text-input:focus {
+  border-color: #ff4444;
+  box-shadow: 0 0 6px rgba(255, 68, 68, 0.5);
+}
